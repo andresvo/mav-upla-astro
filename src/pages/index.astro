@@ -1,11 +1,86 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <main class="text-main">
+    <section
+      class="aspect-[200/75] bg-[url('/img/fondo.jpg')] bg-cover text-white"
+    >
+      <div
+        class="max-w-screen-xl mx-auto flex flex-col justify-end gap-4 h-full py-20"
+      >
+        <h1 class="text-6xl font-black text-shadow w-lg">
+          Más allá <br /> de la <br />
+          <span class="text-naranja">vivienda</span>
+        </h1>
+        <p class="text-shadow font-bold text-lg w-lg">
+          Un enfoque interdisciplinario para comprender las repercusiones
+          sociales de la crisis habitacional en Chile
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="max-w-screen-lg mx-auto flex gap-10">
+        <img src="/img/logo-casa.svg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-neutral-100">
+      <div class="max-w-screen-lg mx-auto">
+        <h2 class="text-4xl font-black text-center mb-4">Últimos eventos</h2>
+        <p class="text-center mb-8">
+          Conoce y participa de Seminarios, Workshops y ciclos de charlas donde
+          existe un enfoque interdisciplinario para comprender las repercusiones
+          sociales de la crisis habitacional en Chile
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <img src="/img/image 203.jpg" alt="" class="rounded-2xl mb-4" />
+            <h3 class="font-bold">
+              Seminario: Repercusiones sociales de la crisis habitacional
+            </h3>
+            <p class="text-xs mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum
+              dolor sit amet, consectetur adipiscing Lorem
+            </p>
+            <p class="text-xs font-bold">17:00 hrs</p>
+            <p class="text-xs font-bold">30 de marzo, 2025</p>
+          </div>
+          <div>
+            <img src="/img/image 204.jpg" alt="" class="rounded-2xl mb-4" />
+            <h3 class="font-bold">Ciclo de charlas 2025</h3>
+            <p class="text-xs mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum
+              dolor sit amet, consectetur adipiscing Lorem
+            </p>
+            <p class="text-xs font-bold">17:00 hrs</p>
+            <p class="text-xs font-bold">30 de marzo, 2025</p>
+          </div>
+          <div>
+            <img src="/img/image 205.jpg" alt="" class="rounded-2xl mb-4" />
+            <h3 class="font-bold">Workshop 2025</h3>
+            <p class="text-xs mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum
+              dolor sit amet, consectetur adipiscing Lorem
+            </p>
+            <p class="text-xs font-bold">17:00 hrs</p>
+            <p class="text-xs font-bold">30 de marzo, 2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
